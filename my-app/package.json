@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=''react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -52,6 +52,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@testing-library/react": "^14.2.1"
+    "@testing-library/react": "^14.2.1",
+    "react-router-dom": "^6.18.0"
   }
 }
