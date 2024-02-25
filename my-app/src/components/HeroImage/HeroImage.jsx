@@ -12,7 +12,7 @@ const HeroImage = () => {
         
         <div className='herologo'><HeroLogo /></div>
     </div>
-  )
+  );
 }
 
 export default HeroImage
