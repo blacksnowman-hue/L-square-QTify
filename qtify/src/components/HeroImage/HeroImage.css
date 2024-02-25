@@ -1,0 +1,19 @@
+.heroimage {
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap:30px;
+}
+
+
+
+
+@media (max-width: 577px){
+
+    .heroimage {
+        font-size: 8px;
+    }
+
+}
