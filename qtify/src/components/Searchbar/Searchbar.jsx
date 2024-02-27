@@ -1,13 +1,16 @@
-import React from 'react'
-import './Searchbar.css'
+import React from "react";
+import {ReactComponent as SearchIcon} from "../../Images/search-icon.svg"
+import styles from "./Searchbar.module.css"
 
-const Searchbar = () => {
+const Search = ({ search }) => {
   return (
-    <div className='searchbar'>
-        <input type="text" placeholder='Search a album of your choice'/>
-        <button><i className="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-  )
-}
+    <form className={styles.wrapper}>
+      <input className={styles.search} placeholder={search}></input>
+      <button className={styles.searchButton} type="submit">
+        <SearchIcon />
+      </button>
+    </form>
+  );
+};
 
-export default Searchbar
+export default Search;
